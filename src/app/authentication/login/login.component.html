@@ -1,0 +1,30 @@
+<div class="row login-div align-items-center justify-content-center">
+    <form [formGroup]="loginForm" class="col-12 col-md-4 bg-card p-5" (ngSubmit)="login()">
+        <div class="text-xxl text-primary mb-5">
+            <b> Login </b>
+        </div>
+        <div class="w-100 my-3">
+            <mat-form-field appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput class="text-login" placeholder="Username" formControlName="username">
+            </mat-form-field>
+            <div class="text-xs text-danger mb-5"
+                *ngIf="(fControl.username.touched || isSubmitted) && fControl.username.invalid">
+                Username is not valid
+            </div>
+        </div>
+        <div class="w-100 mb-3">
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput class="text-primary" placeholder="Password" formControlName="password">
+            </mat-form-field>
+            <div class="text-xs text-danger mb-5"
+                *ngIf="(fControl.password.touched || isSubmitted) && fControl.password.invalid">
+                Password is not valid
+            </div>
+        </div>
+        <div class="w-100">
+            <button class="btn-custom-1 w-100 py-3" type="submit"> Submit </button>
+        </div>
+    </form>
+</div>

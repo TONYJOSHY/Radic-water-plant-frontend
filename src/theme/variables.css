@@ -1,0 +1,31 @@
+:root {
+
+    /* Primary color for app (used by bootstrap classes) */
+    --primary: #2069d1;
+    --secondary: #2ca6d2;
+    --light: #FFFFFF;
+    --danger: #E31C3D;
+    --success: #01A747;
+    --dark: #000000;
+    --info: #F2F2F2;
+    --warning: #F59200;
+
+    /* Font size for app - colors */
+    --size-xxsmall: 1.0rem;
+    --size-xsmall: 1.2rem;
+    --size-small: 1.4rem;
+    --size-regular: 1.6rem;
+    --size-medium: 1.8rem;
+    --size-large: 2rem;
+    --size-xlarge: 2.4rem;
+    --size-xxlarge: 2.7rem;
+    --size-xxxlarge: 3.5rem;
+
+    /* bootstrap variables */
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+}

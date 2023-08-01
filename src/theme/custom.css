@@ -1,0 +1,161 @@
+.text-xxxl {
+    font-size: var(--size-xxxlarge, 3.5rem) !important;
+}
+  
+.text-xxl {
+    font-size: var(--size-xxlarge, 2.7rem) !important;
+}
+
+.text-xl {
+    font-size: var(--size-xlarge, 2.4rem) !important;
+}
+
+.text-lg {
+    font-size: var(--size-large, 2rem) !important;
+}
+
+.text-m {
+    font-size: var(--size-medium, 1.8rem) !important;
+}
+
+.text-sm {
+    font-size: var(--size-regular, 1.6rem) !important;
+}
+
+.text-xs {
+    font-size: var(--size-small, 1.4rem) !important;
+}
+
+.text-xxs {
+    font-size: var(--size-xsmall, 1.2rem) !important;
+}
+
+.text-xxxs {
+    font-size: var(--size-xxsmall, 1rem) !important;
+}
+
+.btn {
+    height: auto !important;
+}
+  
+.btn-custom-1 {
+    color: white !important;
+    background-color: var(--primary) !important;
+    border-radius: 4px !important;
+    font-size: medium;
+}
+  
+.btn-custom-1:hover {
+    color: white !important;
+    background-color: var(--secondary) !important;
+    border-radius: 4px !important;
+}
+
+.btn-custom-1:disabled {
+    color: var(--info) !important;
+    background-color: var(--light) !important;
+    border-radius: 4px !important;
+}
+
+.btn-custom-1:focus {
+    color: white !important;
+    background-color: var(--primary) !important;
+    border-radius: 4px !important;
+}
+  
+.btn-custom-2 {
+    border: 0.1rem solid var(--secondary) !important;
+    background-color: white !important;
+    color: var(--sea-green) !important;
+    border-radius: 4px !important;
+}
+
+.btn-custom-2:hover {
+    border: 0.1rem solid var(--sea-green) !important;
+    background-color: var(--sea-green) !important;
+    color: white !important;
+    border-radius: 4px !important;
+}
+
+.btn-custom-2:disabled {
+    border: 0.1rem solid var(--athens-gray) !important;
+    background-color: white !important;
+    color: var(--dolphin) !important;
+    border-radius: 4px !important;
+}
+  
+.btn-custom-2:focus {
+    border: 0.1rem solid var(--sea-green) !important;
+    background-color: var(--emerald) !important;
+    color: var(--sea-green) !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+  
+.btn-custom-3 {
+    border: none !important;
+    background-color: transparent !important;
+    color: var(--sea-green) !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+
+.btn-custom-4 {
+    border: 1px solid var(--warning) !important;
+    background-color: transparent !important;
+    color: var(--warning) !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+
+.btn-custom-5 {
+    border: 1px solid #808080 !important;
+    background-color:#808080 !important;
+    color: #ffffff !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+  
+.btn-custom-3:hover {
+    border: none !important;
+    background-color: var(--sea-green) !important;
+    color: white !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+  
+.btn-custom-3:disabled {
+    border: none !important;
+    background-color: white !important;
+    color: var(--dolphin) !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+  
+.btn-custom-3:focus {
+    border: none !important;
+    background-color: var(--emerald) !important;
+    color: var(--sea-green) !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+  
+.btn-custom-lg {
+    padding: 1.2rem 2.4rem !important;
+    font-size: 1.4rem !important;
+}
+
+.btn-custom-md {
+    padding: 0.8rem 1.6rem !important;
+    font-size: 1.6rem !important;
+}
+
+.btn-custom-sm {
+    padding: 1.2rem 2.4rem !important;
+    font-size: 1.4rem !important;
+}
+
+.btn-custom-xs {
+    padding: 0.2rem 0.5rem !important;
+    font-size: 1.2rem !important;
+}
