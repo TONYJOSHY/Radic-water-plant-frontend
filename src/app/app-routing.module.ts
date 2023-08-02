@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { userGuard } from './shared/auth/user.guard';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'home', pathMatch: 'prefix' },
@@ -9,7 +10,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule)
+    loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule),
+    canActivate: [userGuard]
   },
   {
     path: '**',
