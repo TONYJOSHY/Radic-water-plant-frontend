@@ -1,0 +1,18 @@
+.text-very-large{
+    font-size: 10rem;
+    font-weight: bolder;
+}
+
+.btn-custom-pnf {
+    border: 0.1rem solid var(--light) !important;
+    background-color: var(--danger) !important;
+    color: var(--light) !important;
+    border-radius: 4px !important;
+    font-size: 2rem;
+}
+
+.btn-custom-pnf:hover {
+    border: 0.1rem solid var(--light) !important;
+    background-color: var(--light) !important;
+    color: var(--danger) !important;
+}
