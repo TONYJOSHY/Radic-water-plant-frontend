@@ -9,16 +9,17 @@ import { SnackbarComponent } from 'src/app/core/snackbar/snackbar.component';
 export class DataService {
 
   constructor(private http: HttpClient,
-    private matSnackbar: MatSnackBar) { }
+    // private matSnackbar: MatSnackBar
+  ) { }
 
   customSnackBar(message: string, type: string) {
-    this.matSnackbar.openFromComponent(SnackbarComponent, {
-      data: {
-        message,
-        type: type,
-      },
-      duration: 3000,
-    });
+    // this.matSnackbar.openFromComponent(SnackbarComponent, {
+    //   data: {
+    //     message,
+    //     type: type,
+    //   },
+    //   duration: 3000,
+    // });
   }
 
   getData(url: string) {
