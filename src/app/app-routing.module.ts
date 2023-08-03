@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { userGuard } from './shared/auth/user.guard';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'home', pathMatch: 'prefix' },
+  // { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: 'auth',
     loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule)
@@ -20,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

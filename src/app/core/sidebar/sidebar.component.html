@@ -1,4 +1,4 @@
-<div class="w-100 text-m">
+<div class="w-100 text-m overflow-hidden">
     <div class="row">
         <div class="col-12">
             <a class="p-3 my-2 cursor-pointer d-block" routerLink="/dashboard"
@@ -10,13 +10,14 @@
             </a>
         </div>
         <div class="col-12">
-            <a class="p-3 my-2 cursor-pointer d-block" routerLink="/auth/login"
+            <a class="p-3 my-2 cursor-pointer d-block" routerLink="/reports"
                 [routerLinkActive]="['router-link-active']">
                 <span class="ml-2"> Reports </span>
             </a>
         </div>
         <div class="col-12">
-            <a class="p-3 my-2 cursor-pointer d-block" routerLink="/pnf" [routerLinkActive]="['router-link-active']">
+            <a class="p-3 my-2 cursor-pointer d-block" routerLink="/settings"
+                [routerLinkActive]="['router-link-active']">
                 <span class="ml-2"> Settings </span>
             </a>
         </div>

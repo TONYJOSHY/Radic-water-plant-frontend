@@ -7,10 +7,18 @@ const routes: Routes = [
     path: '',
     component: FeaturesComponent,
     children: [
-      { path: '', redirectTo: 'daashboard', pathMatch: 'prefix' },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       {
         path: 'dashboard',
         loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+      },
+      {
+        path: 'settings',
+        loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule)
+      },
+      {
+        path: 'reports',
+        loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)
       }
     ]
   },
