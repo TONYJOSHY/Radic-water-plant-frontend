@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-features',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./features.component.scss']
 })
 export class FeaturesComponent {
+
+  opened = false;
 
 }

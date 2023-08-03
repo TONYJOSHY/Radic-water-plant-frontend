@@ -1,9 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FeaturesComponent } from './features.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'prefix' },
-  { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) }
+  {
+    path: '',
+    component: FeaturesComponent,
+    children: [
+      { path: '', redirectTo: 'daashboard', pathMatch: 'prefix' },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+      }
+    ]
+  },
 ];
 
 @NgModule({

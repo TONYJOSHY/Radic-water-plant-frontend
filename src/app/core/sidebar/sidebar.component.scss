@@ -1,0 +1,21 @@
+.router-link-active {
+    font-weight: bold;
+    color: var(--secondary);
+    background: #eaf1ff;
+    border-radius: 6px;
+    position: relative;
+    outline: none
+}
+  
+  
+.router-link-active::before {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    display: block;
+    height: 80%;
+    content: " ";
+    border-radius: 6px;
+    width: 3.5px;
+    background-color: var(--primary);
+}

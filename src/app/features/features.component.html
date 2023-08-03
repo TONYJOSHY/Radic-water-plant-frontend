@@ -1,2 +1,23 @@
-<p>features works!</p>
-<router-outlet></router-outlet>
+<app-header (toggleSidebar)="opened = !opened"></app-header>
+<!-- medium large devices -->
+<div class="d-md-block d-none">
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav mode="side" opened>
+            <app-sidebar></app-sidebar>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+<!-- small devices -->
+<div class="d-md-none d-block">
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav mode="over" [(opened)]="opened">
+            <app-sidebar></app-sidebar>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
