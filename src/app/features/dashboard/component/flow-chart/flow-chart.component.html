@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-12" id="pdfTable">
+        <div class="p-md-5 p-4 item-border">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+                <p class="text-lg mb-0"> Water consumption </p>
+                <app-select-box [optionsList]="optionList" [defaultOption]="selectedFilter.id"
+                    (valueSelected)="filterSource($event)"></app-select-box>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <canvas baseChart #pdfTable id="myCanvas" [type]="'line'" [data]="lineChartData"
+                        [options]="lineChartOptions" [legend]="lineChartLegend">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-custom-1" (click)="downloadAsPDF()"> Export chart </button>
+</div>

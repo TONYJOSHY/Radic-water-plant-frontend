@@ -1,0 +1,6 @@
+<mat-select class="table-filter" (selectionChange)="emitValue()" (openedChange)="selectBoxToggle()" placeholder="Select"
+    [(ngModel)]="selectedValue">
+    <mat-option *ngFor="let item of optionsList" [value]="item">
+        {{ item.name }}
+    </mat-option>
+</mat-select>
