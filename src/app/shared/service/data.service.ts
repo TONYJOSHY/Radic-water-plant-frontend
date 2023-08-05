@@ -2,11 +2,14 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackbarComponent } from 'src/app/core/snackbar/snackbar.component';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+
+  baseUrl = environment.baseUrl;
 
   constructor(private http: HttpClient,
     // private matSnackbar: MatSnackBar
@@ -23,23 +26,23 @@ export class DataService {
   }
 
   getData(url: string) {
-    this.http.get(url)
+    return this.http.get(this.baseUrl + url)
   }
 
   getFile(url: string) {
-    this.http.get(url, this.option2())
+    return this.http.get(this.baseUrl + url, this.option2())
   }
 
   getDataWithParams(url: string, params: any) {
-    this.http.get(url, this.option1(params))
+    return this.http.get(this.baseUrl + url, this.option1(params))
   }
 
   postData(url: string, data: any) {
-    this.http.post(url, data)
+    return this.http.post(this.baseUrl + url, data)
   }
 
   deleteData(url: string) {
-    this.http.delete(url)
+    return this.http.delete(this.baseUrl + url)
   }
 
   option1(params: any) {
