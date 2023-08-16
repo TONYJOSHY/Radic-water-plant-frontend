@@ -97,12 +97,21 @@ export class FlowChartComponent implements OnInit, OnDestroy {
   }
 
   downloadAsPDF() {
-    let canvas: any = document.getElementById('myCanvas');
-    let context = canvas.getContext('2d');
-    let imgData = context.toDataURL("image/jpeg", 1.0);
-    const doc = new jsPDF();
-    doc.addImage(imgData);
-    doc.save("download.pdf");
+    let canvas = document.getElementById('pdfChart') as HTMLElement;
+    const doc = new jsPDF({
+      unit: 'cm',
+      format: [ 1500, 1700 ]
+    });
+    doc.html(canvas,  {
+      callback: function (doc) {
+        doc.deletePage(doc.getNumberOfPages());
+        let name = `Dashboard - ${ new Date().getTime() }`
+        doc.save(name);
+      },
+      x: 10,
+      y: 20,
+      // width: 900
+    })
   }
 
   filterSource(event: OptionList) {
