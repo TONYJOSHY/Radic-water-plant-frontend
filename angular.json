@@ -120,6 +120,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://TONYJOSHY.github.io/Radic-water-plant-frontend/",
+            "name": "Radic water plant frontend",
+            "email": "tonyjoshy100@gmail.com"
+          }
         }
       }
     }
